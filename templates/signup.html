@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title>Registration Page</title>
+    <style>
+        body
+        {
+            /* background-color: white; */
+            color:white;
+            
+            background-image: url();
+            
+            
+            
+
+        }
+        .title
+        {
+            margin-top: 200px;
+            font-size: 150px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 0;
+        }
+        .background-image
+        {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* background-color: white; */
+        /* background-image: url(https://static.vecteezy.com/system/resources/thumbnails/002/070/892/small/abstract-banner-design-template-white-glossy-with-gold-line-and-lighting-effect-on-dark-background-and-texture-vector.jpg); */
+        /* background-image: linear-gradient(white, rgb(45, 1, 1), white); */
+        background-image: url(https://cdna.artstation.com/p/assets/images/images/028/240/146/large/andre-walters-lisa-bedroom-sketch-2.jpg?1593883875);
+        /* backface-visibility:0.5; */
+        background-size: cover;
+        z-index: -1;
+        }
+        form
+        {
+            text-align:center;
+            /* background-color: white; */
+
+        }
+        .kk
+        {
+            text-align: center;
+            font-size: 40px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image"></div>
+    <h1 class="title">Registration Page</h1>
+    <h3 class="kk">New User Detected!<br>Registration Page Selected</h3><br>
+    <form method="post" action="/sign">
+        <!-- <label for="name">Name:</label> -->
+        <input type="text" name="name" style="font-size: 40px; color:white; background-color: transparent ;text-align: center;border-top: 6px;border-left: 2px;border-radius: 30%; ;"required placeholder="Enter  Name">
+        <br><br>
+        <!-- <label for="email">Email:</label> -->
+        <input type="text" name="email"style="font-size: 40px;color:white; background-color: transparent ;text-align: center ;border-top: 6px;border-left: 2px;border-radius: 30%;" required placeholder="Enter UserName">
+        <br><br>
+        <!-- <label for="password">Password:</label> -->
+        <input type="password" name="password" style="font-size: 40px;color:white;  background-color: transparent ;text-align: center ;border-top: 6px;border-left: 2px;border-radius: 30%;"required placeholder="Enter Password">
+        <br><br>
+        <input type="submit" style="font-size: 40px; background-color:transparent ;opacity: 0.8;; color:white;"value="Submit">
+    </form>
+</body>
+</html>

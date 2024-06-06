@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <title>CodePen - Tinder swipe cards</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="../static/style.css">
+ <style>
+
+
+  #back{
+    margin-left: 4vh;
+   top: 0;
+  }
+ </style>
+</head>
+
+<body>
+  <h1 style="font-size: 7vh;font-weight: 700;font-family: 'Fraunces', serif;color: aliceblue;text-align: center;">Explore karo</h1>
+  <!-- partial:index.partial.html -->
+  <!-- <h1 style="color: aliceblue;">{{name}}</h1> -->
+  <div class="tinder">
+    <div class="tinder--status">
+      <i class="fa fa-remove"></i>
+      <i class="fa fa-heart"></i>
+    </div>
+    <a  id="back" style="color: #FFACE4;; font-family: sans-serif; font-size: 3vh;font-weight: 700;" href="/users/{{name}}">Go Back</a>
+    <div class="tinder--cards">
+      {% for user in users %}
+     
+      <div class="tinder--card">
+        <img src="data:image/jpg;base64,{{ user.photo }}">
+        <h4 style="text-align: left;margin-top: 0vh; margin-left: 1vh; font-size: 3.8vh;font-weight: 700;font-family: sans-serif;">{{user.name}} &#160 &#160 &#160 &#160  &#160  &#160  &#160  &#160 &#160 &#160 Age-{{user.age}}</h4>
+        <h4 style="text-align: left;margin-top: 1vh;margin-left: 1vh;font-size: 1.8vh;font-weight: 700;font-family: sans-serif;">BIO - {{user.bio}}</h4>
+        <!-- <p>{{user.bio}}</p> -->
+        <div class="tinder--buttons">
+          <div style="display: flex; margin-top: auto;padding: 0vh 0vh 0vh 8vh;">
+
+          <form method="POST" action="/swipe_left?name={{user.name}}&user={{name}}">
+            <!-- <div class="tinder--buttons"> -->
+            <!-- <button type="submit" name="swipe_direction" value="left"><i class="fa fa-remove"></i></button> -->
+  
+            <button id="nope"  name="swipe_direction" value="left"><i class="fa fa-remove"></i></button>
+            
+            </form>
+          <!-- <div class="tinder--buttons"> -->
+  
+          <form method="POST" action="/swipe_right?name={{user.name}}&user={{name}}">
+            <button id="love" name="swipe_direction" value="right"><i class="fa fa-heart"></i></button>
+          </form>
+
+          </div>
+        </div>
+      </div>
+      
+      {% endfor %}
+    </div>
+    <!-- partial -->
+    <!-- <script src='https://hammerjs.github.io/dist/hammer.min.js'></script> -->
+    <script src="../static/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Profile2</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* Global styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__340.jpg);
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Header styles */
+         .header {
+            background-color:transparent;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 0;
+            /* position: sticky; */
+            top: 0;
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            /* z-index: 999; */
+            font-size: 50px;
+        } 
+
+        .header h1 {
+            /* margin: 0; */
+            /* font-size: 36px; */
+        }
+
+        /* Form styles */
+        .form {
+            background-color: #444;
+            padding: 50px 20px;
+            /* margin: 50px auto; */
+            max-width: 600px;
+            border-radius: 5px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .form h2 {
+            margin-bottom: 20px;
+            font-size: 54px;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .form label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 58px;
+            font-weight: 500;
+        }
+
+        .form input[type="text"],
+        .form input[type="email"],
+        .form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 56px;
+            font-weight: 400;
+            border: none;
+            border-radius: 3px;
+            background-color: #eee;
+            color: #333;
+        }
+
+        .form input[type="radio"] {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .form button[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #555;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .form button[type="submit"]:hover {
+            background-color: #777;
+        }
+
+        /* Footer styles */
+        .footer {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+        .labeling
+        {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header" style="text-align: center; margin: 50px;margin-bottom: 0;">
+        <h1>Additional Information</h1>
+    </div>
+
+    <form style="text-align: center; font-size: 50px;">
+        
+        
+        <br><br>
+        
+        <label class="labeling" style="font-size: 50px; color: skyblue;">Hobbies:</label>
+        <input type="checkbox" id="hobby1" style="font-size: 30px;size: 50px;height: 20px;width: 20px;"name="hobby1" value="reading">
+        <label class="labeling"for="hobby1">Reading</label>
+        
+        <input type="checkbox" id="hobby2" name="hobby2" style="font-size: 30px;size: 50px;height: 20px;width: 20px;"value="sports">
+        <label class="labeling"for="hobby2">Sports</label>
+        
+        <input type="checkbox" id="hobby3" name="hobby3" style="font-size: 30px;size: 50px;height: 20px;width: 20px;"value="music">
+        <label class="labeling"for="hobby3">Music</label>
+        
+        <br><br>
+        
+        <label class="labeling"style="font-size: 50px;  color: skyblue;" >Drinking Habits:</label>
+        <input type="radio" id="drinking1" name="drinking" style="font-size: 30px;size: 50px;height: 20px;width: 20px;"value="never">
+        <label class="labeling"for="drinking1">Never</label>
+        
+        <input type="radio" id="drinking2" name="drinking" style="font-size: 30px;size: 50px;height: 20px;width: 20px;"value="occasionally">
+        <label class="labeling"for="drinking2">Occasionally</label>
+        
+        <input type="radio" id="drinking3" name="drinking" style="font-size: 30px;size: 50px;height: 20px;width: 20px;"value="frequently">
+        <label class="labeling"for="drinking3">Frequently</label>
+        
+        <br><br>
+        
+        <label class="labeling" style="font-size: 50px;  color: skyblue;">Smoking Habits:</label>
+        <input type="radio" id="smoking1" name="smoking" style="font-size: 30px;size: 50px;height: 20px;width: 20px;"value="never">
+        <label  class="labeling"for="smoking1">Never</label>
+        
+        <input type="radio" id="smoking2" name="smoking" style="font-size: 30px;size: 50px;height: 20px;width: 20px;"value="occasionally">
+        <label class="labeling" for="smoking2">Occasionally</label>
+        
+        <input type="radio" id="smoking3" name="smoking" style="font-size: 30px;size: 50px;height: 20px;width: 20px;"value="frequently">
+        <label  class="labeling"for="smoking3">Frequently</label>
+        
+        <br><br>
+        
+        <label class="labeling" style="font-size: 50px;  color: skyblue;">Cleanliness Frequency:</label>
+        <input type="radio" id="cleanliness1" name="cleanliness"style="font-size: 30px;size: 50px;height: 20px;width: 20px;" value="daily">
+        <label class="labeling" for="cleanliness1">Daily</label>
+        
+        <input type="radio" id="cleanliness2" name="cleanliness" style="font-size: 30px;size: 50px;height: 20px;width: 20px;"value="weekly">
+        <label  class="labeling"for="cleanliness2">Weekly</label>
+        
+        <input type="radio" id="cleanliness3" name="cleanliness" style="font-size: 30px;size: 50px;height: 20px;width: 20px;"value="monthly">
+        <label  class="labeling"for="cleanliness3">Monthly</label><br><br>
+
+        <input type="submit" value="SUBMIT" style="width:300px; font-size: 70px;background-color: transparent; height:100px ;color: peachpuff;">
+        <br>
+        <br>
+        
+      </form>
+</body> </html>
